@@ -4,10 +4,10 @@ import FadeIn from '../utils/FadeIn';
 
 const InicioContainer = styled.section`
     background-color: #d5d5d5;
-    min-height: 115vh;
+    min-height: 110vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    
     background: linear-gradient(90deg, #d5d5d5 10.88%, rgba(255, 255, 255, 0.203) 87.45%), url(${car_img});
     background-size: cover;
     background-repeat: no-repeat;
@@ -25,6 +25,8 @@ const Titulo = styled.h1`
     font-size: 3rem;
     margin-left : 20%;
     margin-right: 20%;
+    padding-top: 3em;
+    padding-bottom: 1.8em;
     @media (max-width: 500px) {
         font-size: 2.2rem;
         margin: 2% 4%;

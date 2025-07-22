@@ -28,7 +28,7 @@ function App() {
 
       let offset = 0;
       if (isMobileView && headerHeight > 0) {
-        offset = headerHeight;
+        offset = headerHeight-20;
       }//
 
       const targetScrollPosition = element.getBoundingClientRect().top + window.scrollY + offset;
