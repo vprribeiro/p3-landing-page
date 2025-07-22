@@ -7,7 +7,7 @@ const InicioContainer = styled.section`
     min-height: 110vh;
     display: flex;
     flex-direction: column;
-    
+    justify-content: center;
     background: linear-gradient(90deg, #d5d5d5 10.88%, rgba(255, 255, 255, 0.203) 87.45%), url(${car_img});
     background-size: cover;
     background-repeat: no-repeat;
@@ -25,21 +25,12 @@ const Titulo = styled.h1`
     font-size: 3rem;
     margin-left : 20%;
     margin-right: 20%;
-    padding-top: 3em;
-    padding-bottom: 1.8em;
+    padding-bottom: 1.3em;
     @media (max-width: 500px) {
         font-size: 2.2rem;
         margin: 2% 4%;
     }
 `
-/* const TextoCTA = styled.p`
-    font-size: 1.4rem;
-    font-weight: 600;
-    margin-left: 2%;
-    margin-right: 2%;
-    padding-bottom: 0.5em;
-` */
-
 const BtnWpp = styled.a`
     text-decoration: none;
     background-color: #1C75BC;
@@ -66,8 +57,9 @@ function Inicio (){
                             O melhor cuidado para o seu carro, com o diferencial que você merece
                         </strong>
                     </Titulo>
-
-                    <BtnWpp href="https://wa.me/+5571985450220" target='_blank'>FAÇA SEU ORÇAMENTO</BtnWpp>
+                    <BtnWpp href="https://wa.me/+5571985450220" target='_blank'>
+                        FAÇA SEU ORÇAMENTO
+                    </BtnWpp>
                 </div>
             </InicioContainer>
         </FadeIn>
