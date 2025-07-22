@@ -22,15 +22,7 @@ function App() {
   const scrollToSection = (ref: React.RefObject<HTMLDivElement>) => {
     const element = ref.current;
     if (element) {
-      // Obtenha a altura real do cabeçalho no momento do clique
-      const headerHeight = headerRef.current ? headerRef.current.offsetHeight : 0;
-      const isMobileView = window.innerWidth <= 768; // Verifica se é mobile
-
-      let offset = 0;
-      if (isMobileView && headerHeight > 0) {
-        offset = 0;
-      }//
-
+      let offset = 0;      
       const targetScrollPosition = element.getBoundingClientRect().top + window.scrollY + offset;
 
       window.scrollTo({
