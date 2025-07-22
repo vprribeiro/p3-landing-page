@@ -54,7 +54,7 @@ const DesktopNavigation = styled.nav`
 `
 
 interface HeaderProps {
-    headerRef: React.RefObject<HTMLElement>; // <--- ADICIONE ESTA PROP
+    headerRef: React.RefObject<HTMLElement>; 
     inicioRef: React.RefObject<HTMLDivElement>;
     produtosRef: React.RefObject<HTMLDivElement>;
     servicosRef: React.RefObject<HTMLDivElement>;
@@ -64,7 +64,7 @@ interface HeaderProps {
   }
 
 function Header({
-    headerRef, // <--- RECEBA A PROP
+    headerRef, 
     inicioRef,
     produtosRef,
     servicosRef,
@@ -100,7 +100,7 @@ function Header({
                 />
                 ) : (
                 <DesktopNavigation>
-                        <ul>{/* AGORA COMEÇA O AJUSTE DO GEM */}
+                        <ul>
                             <li><a href="#inicio" onClick={(e) => { e.preventDefault(); scrollToSection(inicioRef); }}>Home</a></li>
                             <li><a href="#produtos" onClick={(e) => { e.preventDefault(); scrollToSection(produtosRef); }}>Produtos</a></li>
                             <li><a href="#servicos" onClick={(e) => { e.preventDefault(); scrollToSection(servicosRef); }}>Serviços</a></li>

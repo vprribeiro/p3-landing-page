@@ -1,4 +1,4 @@
-import styled, {css} from "styled-components"; /* AGORA COMEÇA O CÓDIGO DO GEMINI */
+import styled, {css} from "styled-components";
 import React from "react";
 import useHamburgerMenu from "../../hooks/useHamburgerMenu";
 import { CgClose } from "react-icons/cg";
@@ -10,8 +10,6 @@ const DivHamburger = styled.div`
     flex-direction: column; /* Usar column para empilhar ul e botão */
     align-items: flex-end; /* Alinhar o botão à direita */
     width: 100%;
-    /* Remova qualquer position: absolute aqui, se houver */
-    /* top: 0; left: 0; right: 0; */
 
 `
 // Estilo para a lista de links quando o menu está fechado
@@ -42,13 +40,11 @@ const MenuUl = styled.ul<{ isOpen: boolean }>`
     margin: 0; /* Remova todas as margens padrão */
     background-color: #231F20; /* Cor de fundo para o menu aberto, se desejar */
     box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Sombra para destacar o menu */
-
-    position: absolute; /* <--- Isso provavelmente é o culpado, mas vamos compensar */
+    position: absolute; 
     top: 100%; /* Posicione abaixo do cabeçalho */
     left: 0;
     right: 0;
     z-index: 99; /* Abaixo do botão, mas acima do conteúdo da página */
-
     ${props => (props.isOpen ? MenuListOpen : MenuListClosed)}
 `;
 

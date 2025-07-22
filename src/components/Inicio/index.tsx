@@ -30,13 +30,13 @@ const Titulo = styled.h1`
         margin: 2% 4%;
     }
 `
-const TextoCTA = styled.p`
+/* const TextoCTA = styled.p`
     font-size: 1.4rem;
     font-weight: 600;
     margin-left: 2%;
     margin-right: 2%;
     padding-bottom: 0.5em;
-`
+` */
 
 const BtnWpp = styled.a`
     text-decoration: none;
@@ -61,13 +61,11 @@ function Inicio (){
                 <div>
                     <Titulo>
                         <strong>
-                            O melhor cuidado para o seu carro, com o diferencial que você merece.
+                            O melhor cuidado para o seu carro, com o diferencial que você merece
                         </strong>
                     </Titulo>
-                    <TextoCTA>
-                        Faça seu orçamento agora mesmo.
-                    </TextoCTA>
-                    <BtnWpp href="https://wa.me/+5571985450220" target='_blank'>FAZER ORÇAMENTO</BtnWpp>
+
+                    <BtnWpp href="https://wa.me/+5571985450220" target='_blank'>FAÇA SEU ORÇAMENTO</BtnWpp>
                 </div>
             </InicioContainer>
         </FadeIn>
